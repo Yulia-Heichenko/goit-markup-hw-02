@@ -32,9 +32,9 @@ letter-spacing: 0.02em;
 color: var (--primary-text-color);
 }
 
-/* .menu-item>menu-link {
-color: var(--accent-color);
-} */
+a.current {
+    color: var(--accent-color)
+}
 
 .menu-link:hover,
 .menu-link:focus {
@@ -75,14 +75,15 @@ color: var(--second-color);
 
 /* ==============HERO=============== */
 .modal-btn {
-font-family: 'Roboto', sans-serif;
+font-weight: bold;
+font-size: 16px;
+line-height: 1.87;
 background-color: var(--fon-batton);
 color: var(--wite-color);
 cursor: pointer;
 }
 
 .hero-caption {
-font-family: 'Roboto', sans-serif;
 font-weight: 900;
 font-size: 44px;
 line-height: 1.36;
@@ -156,9 +157,13 @@ color: var(--second-color);
 .footer {
 background: #2F303A;
 }
-.company-address {
+
+address {
 font-style: normal;
-font-weight: normal;
+font-weight: normal
+}
+
+.company-address {
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
@@ -171,8 +176,6 @@ color: var(--wite-color);;
 
 
 .list-contact {
-font-style: normal;
-font-weight: normal;
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
