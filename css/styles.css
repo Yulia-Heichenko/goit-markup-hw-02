@@ -1,12 +1,14 @@
 :root {
     --primary-text-color:#212121;
     --second-color:#757575;
-    --accent-color: #2196F3; 
+    --accent-color:#2196F3;
+    --fon-batton: #2196F3;
+    --wite-color:#ffffff;
 }
 
 body {
 font-family: 'roboto', sans-serif;
- background-color: #FFFFFF; 
+background-color: #ffffff; 
 }
 
 .list {
@@ -17,17 +19,22 @@ font-family: 'roboto', sans-serif;
     text-decoration: none;
 }
 
-
+button {
+    font-family: inherit;
+}
 
 /* ============HEADER============= */
 .menu-link {
-font-family: 'Roboto', sans-serif;
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 color: var (--primary-text-color);
 }
+
+/* .menu-item>menu-link {
+color: var(--accent-color);
+} */
 
 .menu-link:hover,
 .menu-link:focus {
@@ -38,15 +45,15 @@ color: var(--accent-color)
 color: var(--accent-color)
 }
 
+
 .logo-link {
- font-family: 'Raleway', sans-serif;
+ font-family: "Raleway", sans-serif;
 font-weight: 700;
 font-size: 26px;
 line-height: 1.19;
 letter-spacing: 0.03em; 
 /* color: #2196F3; */
 } 
-
 
 .logo-link>span {
     color: var(--accent-color)
@@ -55,6 +62,7 @@ letter-spacing: 0.03em;
 .link {
     color: #000;
 }
+
 
 .cont-link {
 font-family: 'Roboto', sans-serif;
@@ -68,8 +76,8 @@ color: var(--second-color);
 /* ==============HERO=============== */
 .modal-btn {
 font-family: 'Roboto', sans-serif;
-background-color: #2196F3;
-color: #FFFFFF;
+background-color: var(--fon-batton);
+color: var(--wite-color);
 cursor: pointer;
 }
 
@@ -82,20 +90,31 @@ line-height: 1.36;
 
 /* ===========Особености подхода к работе=============== */
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .description-title {
-font-family: 'Roboto', sans-serif;
 font-weight: 700;
 font-style: normal;
-font-weight: bold;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
-color: var (--primary-text-color);
+color: var(--primary-text-color);
 }
 
 .description-text {
-font-family: 'Roboto', sans-serif;
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
@@ -105,12 +124,11 @@ color: var(--second-color);
 
 /* =========Вид деятельности компании========== */
 .work-title {
-font-family: 'Roboto', sans-serif;
 font-size: 36px;
 line-height: 1.16;
 text-align: center;
 letter-spacing: 0.03em;
-color: var (--primary-text-color);
+color: var(--primary-text-color);
 }
 
 /* ===========Состав компании============ */
@@ -123,7 +141,7 @@ font-weight: 500;
 font-size: 16px;
 line-height: 1.18;
 letter-spacing: 0.03em;
-color: var (--primary-text-color);
+color: var(--primary-text-color);
 }
 
 .structure-list-profession {
@@ -139,22 +157,20 @@ color: var(--second-color);
 background: #2F303A;
 }
 .company-address {
-font-family: 'Roboto', sans-serif;
 font-style: normal;
 font-weight: normal;
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
-color: #FFFFFF;;
+color: var(--wite-color);
 }
 
 .footer>.link {
-    color: white;
+color: var(--wite-color);;
 }
 
 
 .list-contact {
-font-family: 'Roboto', sans-serif;
 font-style: normal;
 font-weight: normal;
 font-size: 14px;
@@ -171,7 +187,7 @@ color: rgba(255, 255, 255, 0.6);
 /* ============Страница portfolio================ */
 /* ============Секция портфолио компании============= */
 .filter-item {
-color: var (--primary-text-color);
+color: var(--primary-text-color);
 font-style: normal;
 font-weight: 500;
 font-size: 16px;
@@ -180,9 +196,9 @@ letter-spacing: 0.03em;
 }
 
 .filter-item:hover,
-f.ilter-item:focus {
-color: #FFFFFF;
-background-color: #2196F3;
+.filter-item:focus {
+color: var(--wite-color);
+background-color: var(--fon-batton);;
 }
 
 .portfolio-item-heading {
@@ -190,7 +206,7 @@ font-weight: 700;
 font-size: 18px;
 line-height: 2;
 letter-spacing: 0.06em;
-color: var (--primary-text-color); 
+color: var(--primary-text-color); 
 }
 
 .portfolio-item-text {
